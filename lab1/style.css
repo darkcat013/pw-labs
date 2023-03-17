@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 1 - Groceries on the go */
+
+#groceries-on-the-go {
+    background-image: url(images/1-groceries-on-the-go/backgound.png);
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#groceries-fruits-and-orange-zigzag {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#groceries-left-strawberry {
+    align-self: flex-end;
+    margin-bottom: 5%;
+}
+
+#groceries-top-and-bottom-fruit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+
+#groceries-content {
+    position: relative;
+    width: 90%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 5%;
+}
+
+#toolbar {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+    color: #ed4300;
+    stroke: #e7d5c5;
+    flex-grow: 2;
+}
+
+.toolbar-part {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#groceries-text-and-phone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15vh;
+    gap:5px;
+}
+
+.equal-width-item {
+    flex: 1;
+}
+
+#groceries-text {
+    flex:2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#groceries-text-title {
+    font-size: 8vw;
+    color: #ed4300;
+    font-weight: 600;
+    text-align: center;
+    
+}
+
+#groceries-text-content {
+    margin:5px 0 20px 0;
+    text-align: center;
+    font-weight: 800;
+    width: 85%;
+}
+
+#groceries-text-buttons {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.main-button {
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: #ed4300;
+    color: #e7d5c5;
+    padding: 6px 20px 6px 20px;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+}
+
+.secondary-button {
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: #e7d5c5;
+    color: #ed4300;
+    padding: 6px 20px 6px 20px;
+    font-weight: 800;
+    font-size: 14px;
+    text-align: center;
+}
+
+#groceries-phone {
+    display: flex;
+    justify-content: end;
+}
+
+#groceries-vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: #e7d5c5;
+    font-weight: 700;
+    font-size: 1.5rem;
+    word-wrap: break-word;
+}
+
+/* 2 - Locally sourced items */
+
+#locally-sourced {
+    background-image: url(images/2-locally-sourced/background.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#local-container {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    margin: 60px 40px 60px 40px;
+}
+
+#local-banana {
+    align-self: flex-end;
+    flex: 1;
+}
+
+#local-mango {
+    display: flex;
+    justify-content: end;
+    align-self: flex-start;
+    flex: 1;
+}
+
+#local-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex:5;
+    gap:35px;
+}
+
+#local-header {
+    font-size: 18px;
+}
+
+#local-title {
+    color:#e7d5c5;
+    font-size: 8vw;
+    font-weight: 600;
+    text-align: center;
+}
+
+#local-content {
+    color:#e7d5c5;
+    text-align: center;
+    width: 65%;
+    font-weight: 700;
+}
+
+/* 3 - Made simple */
+
+#made-simple {
+    background-image: url(images/3-made-simple/background.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#made-simple-container {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin: 80px 40px 80px 40px;
+}
+
+#made-simple-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:35px;
+}
+
+#made-simple-title {
+    color:#ed4300;
+    font-size: 8vw;
+    font-weight: 600;
+    text-align: center;
+}
+
+#made-simple-content {
+    text-align: center;
+    width: 60%;
+    font-weight: 700;
+}
+
+#made-simple-options {
+    display: flex;
+    gap:40px;
+    justify-content: space-evenly;
+}
+
+.made-simple-option-item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.made-simple-option-item-img {
+    width: 340px;
+    height: 340px;
+    border: 3px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.made-simple-option-item-sub {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.made-simple-product-name-price {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.made-simple-product-name {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.made-simple-price {
+    font-size: 13px;
+    color: #ed4300;
+    font-weight: 600;
+}
+
+#made-simple-arrows {
+    display: flex;
+    gap: 80px;
+}
+
+/* 4 - FAQ */
+
+#faq {
+    background-image: url(images/4-faq/background.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#faq-content-zigzag {
+    display: flex;
+    flex-direction: column;
+}
+
+#faq-zigzag {
+    width: 100%;
+}
+
+#faq-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px;
+    align-items: center;
+}
+
+#faq-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 60px;
+
+}
+
+#faq-title {
+    color:#e7d5c5;
+    font-size: 9vw;
+    font-weight: 600;
+    text-align: left;
+}
+
+#faq-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.faq-question-plus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #e7d5c5;
+    gap:90px;
+}
+
+.faq-question {
+    font-size: 24px;
+    color: #e7d5c5;
+    font-weight: 700;
+}
+
+.faq-plus {
+    line-height: 40px;
+    font-size: 64px;
+    color: #e7d5c5;
+    font-weight: 400;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 540px) {
+    #groceries-text {
+        margin-top: 60px;
+    }
+    #groceries-vertical-text {
+        display: none;
+    }
+    #groceries-top-and-bottom-fruit {
+        display: none;
+    }
+    #toolbar {
+        margin-top: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:10px;
+    }
+    .toolbar-part{
+        flex-direction: column;
+        width: 100%;
+    }
+    #groceries-phone {
+        display: none;
+    }
+    .made-simple-option-item-img {
+        width: 200px;
+        height: 200px;
+    }
+    .made-simple-option-item-img img {
+        height: 65%;
+    }
+    .made-simple-option-item-sub {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:10px;
+    }
+    
+}
+
+@media only screen and (max-width: 760px) {
+    .local-image {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    #orange-zigzag {
+        display: none;
+    }
+
+    #toolbar-part2 li {
+        background-color: #ed4300;
+        border: 10px solid #ed4300;
+        border-radius: 20px;
+    }
+
+    #groceries-vertical-text span {
+        color: #ed4300;
+    }
+    
+}
+
+@media only screen and (max-width: 1200px) {
+    #groceries-top-fruit{
+        display: none;
+    }
+    #groceries-top-and-bottom-fruit {
+        justify-content: end;
+    }
+    #made-simple-options {
+        flex-direction: column;
+    }
+    #faq-card {
+        display: none;
+    }
+}
+
+
+/* Bootstrap breakpoints:
+>1200
+1200
+760
+540
+<540 */

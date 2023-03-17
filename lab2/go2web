@@ -1,0 +1,34 @@
+#! /usr/bin/env bash
+
+if [ $# -eq 0 ]
+then
+  echo "No options provided, use -h for help"
+elif [ $# -eq 1 ]
+then
+  case "$1" in
+    -u|-s)
+      echo "Argument not provided, use -h for help"
+      ;;
+
+    -h)
+      echo "go2web -u <URL>         # make an HTTP request to the specified URL and print the response"
+      echo "go2web -s <search-term> # make an HTTP request to search the term using Google and print top 10 results"
+      echo "go2web -h               # show this help"
+      ;;
+
+    *)
+      echo "Invalid option, use -h for help"
+      ;;
+  esac
+else 
+  case "$1" in
+    -u|-s)
+      chmod 777 pw-lab2
+      ./pw-lab2 $@
+      ;;
+
+    *)
+      echo "Invalid usage, use -h for help"
+      ;;
+  esac
+fi
