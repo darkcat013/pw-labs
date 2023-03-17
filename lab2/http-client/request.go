@@ -24,6 +24,7 @@ func Request(urlString string) (headers textproto.MIMEHeader, body string) {
 
 func handleRedirect(statusCode int, headers textproto.MIMEHeader, body string, urlString string, redirectCount int) (returnHeaders textproto.MIMEHeader, returnBody string, finalUrlString string) {
 	if statusCode == http.StatusNotModified {
+		fmt.Println("This URL is cached locally")
 		cache := cache.Get(urlString)
 		headers.Add("Content-Type", cache.ContentType)
 		return headers, cache.Content, urlString
