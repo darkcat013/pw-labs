@@ -1,0 +1,29 @@
+#sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: 0px 0px 8px #888888;
+  }
+
+#menu-switch {
+    z-index: 2;
+    position: inherit;
+}
+
+textarea {
+    resize: none !important;
+}
+
+#remove-completed {
+    margin-bottom: .115rem;
+}
+
+.drag-over {
+    border: 3px solid red;
+}

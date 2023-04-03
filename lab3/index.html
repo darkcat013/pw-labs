@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viorel, Noroc, FAF-203</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <script src="app.js" defer type="module"></script>
+</head>
+
+<body>
+  <!-- left side menu -->
+  <ul id="sidenav" class="nav nav-pills flex-column bg-secondary-subtle">
+    <li class="nav-item m-2">
+      <div class="form-switch form-check">
+        <label class="form-check-label" for="theme-switch">Dark theme</label>
+        <input class="form-check-input" type="checkbox" role="switch" id="theme-switch">
+      </div>
+    </li>
+    <li class="nav-item m-2">
+      <button class="btn btn-warning" type="button" id="remove-completed">Remove completed tasks</button>
+    </li>
+    <hr />
+    <li class="nav-item m-2">
+      <button class="btn btn-outline-danger" type="button" id="remove-all">Remove all tasks</button>
+    </li>
+  </ul>
+
+  <!-- menu toggler -->
+  <nav class="navbar p-2">
+    <button class="navbar-toggler navbar-toggler-icon" id="menu-switch" type="button"></button>
+    <div class="mx-auto">
+      <div class="navbar-brand mx-auto fw-bold">To-Do List</div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- Add task -->
+    <div class="row justify-content-center">
+      <div class="col-lg-6 ">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Add new task" id="new-task-input">
+          <button class="btn btn-primary" type="button" id="new-task-btn">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search -->
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Search..." id="search-input">
+          <button class="btn btn-outline-primary" type="button" id="search-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+              viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Incomplete tasks -->
+      <div class="col-md-6 mb-2" id="todos-container">
+        <div class="container bg-primary-subtle rounded-4">
+          <div class="mx-auto text-center fw-bold p-2">
+            In progress
+          </div>
+
+          <div class="container p-2">
+            <hr />
+          </div>
+
+          <div class="container p-3 pt-0" id="todos"></div>
+        </div>
+      </div>
+      <!-- completed tasks -->
+      <div class="col-md-6" id="completed-todos-container">
+        <div class="container bg-secondary-subtle rounded-4">
+          <div class="mx-auto text-center fw-bold p-2">
+            Completed
+          </div>
+
+          <div class="container p-2">
+            <hr />
+          </div>
+
+          <div class="container p-3 pt-0" id="completed-todos"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
