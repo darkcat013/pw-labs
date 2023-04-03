@@ -19,6 +19,9 @@ const IdConstants = {
 
   searchInput: "search-input",
   searchBtn: "search-btn",
+
+  notificationInput: "notification-input",
+  notificationBtn: "notification-btn",
 }
 
 export default IdConstants

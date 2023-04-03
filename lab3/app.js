@@ -6,6 +6,7 @@ import { newTodo, initTodos, search } from "./modules/todos.js";
 import { initTheme } from "./modules/theme.js";
 import { removeAll, removeCompleted } from "./modules/local-storage-helper.js";
 import { addDragDropEvents } from "./modules/drag-drop.js";
+import { initNotificationInput, intervalChangedNotification } from "./modules/notifications.js";
 
 initTheme()
 
@@ -22,5 +23,9 @@ document.getElementById(IdConstants.searchInput).addEventListener("keyup", (e) =
 
 addDragDropEvents(document.getElementById(IdConstants.todosContainer))
 addDragDropEvents(document.getElementById(IdConstants.completedTodosContainer))
+
+initNotificationInput()
+document.getElementById(IdConstants.notificationBtn).addEventListener("click", () => { intervalChangedNotification() })
+document.getElementById(IdConstants.notificationInput).addEventListener("keypress", (e) => {e.key === "Enter" && document.getElementById(IdConstants.notificationBtn).click()})
 
 initTodos()
