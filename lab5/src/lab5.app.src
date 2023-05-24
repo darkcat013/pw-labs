@@ -1,0 +1,14 @@
+{application, lab5,
+ [{description, "Lab5: telegram bot"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, {lab5_app, []}},
+  {applications,
+   [kernel,
+    stdlib,
+    cowboy
+   ]},
+  {env,[]},
+  {modules, []},
+  {links, ["Github", "https://github.com/darkcat013/pw-lab5"]}
+ ]}.
