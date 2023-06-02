@@ -165,7 +165,7 @@ function getQuizProgressText(localQuiz: LocalStorageQuiz | undefined, questionsC
         </div>
       </div>
       <div class="level-right">
-        <a class="button p-2 is-primary level-item" :class="quiz.buttonClass" :href="`/quiz/${quiz.id}`">
+        <a class="button p-2 is-primary level-item is-hidden-mobile" :class="quiz.buttonClass" :href="`/quiz/${quiz.id}`">
           <img :src="PlayIcon" width="24" class="mr-1"><span>{{ quiz.buttonText }}</span></a>
       </div>
     </div>

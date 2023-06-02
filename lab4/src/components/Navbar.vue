@@ -20,12 +20,6 @@ const quizzesStore = useQuizzesStore()
         {{ userStore.getNameSurname() }}
       </div>
 
-      <div class="navbar-item">
-        <audio :src="music" loop controls>
-          Your browser does not support audio HTML tag
-        </audio>
-      </div>
-
       <a class="navbar-burger" :class="{ 'is-active': burgerOn }" @click="burgerOn = !burgerOn">
         <span></span>
         <span></span>
@@ -35,6 +29,11 @@ const quizzesStore = useQuizzesStore()
     <div class="navbar-menu" :class="{ 'is-active': burgerOn }">
 
       <div class="navbar-end">
+        <div class="navbar-item">
+          <audio :src="music" loop controls>
+            Your browser does not support audio HTML tag
+          </audio>
+        </div>
         <div class="navbar-item">
           <a class="button is-light is-bordered" @click="userStore.logOff(); quizzesStore.clear();">
             Log out
