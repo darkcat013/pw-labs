@@ -5,4 +5,5 @@
 - [Lab1](https://github.com/darkcat013/pw-lab1)
 - [Lab2](https://github.com/darkcat013/pw-lab2)
 - [Lab3](https://github.com/darkcat013/pw-lab3)
+- [Lab4](https://github.com/darkcat013/pw-lab4)
 - [Lab5](https://github.com/darkcat013/pw-lab5)
